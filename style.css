@@ -1,3 +1,14 @@
+:root {
+  --btn-background: #f9c06a;
+  --btn-paddings: 14px 27px 15px;
+  --btn-color: #1e1e1e;
+  --btn-radius: 24px;
+
+  --line-height-34: 34px;
+  --color-light: white;
+  --color-dark: #707070;
+}
+
 body {
   font-family: "Playfair Display", serif;
 }
@@ -12,13 +23,13 @@ body,
 
 .container {
   border: 1px solid yellow;
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
 header {
   background-image: url(img/coffee_image.png);
-  color: white;
+  color: var(--color-light);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -33,7 +44,7 @@ header .logo {
 }
 
 header a {
-  color: white;
+  color: var(--color-light);
 }
 
 header nav {
@@ -74,7 +85,7 @@ header .login {
 
 .hero {
   border: 1px solid red;
-  width: 585px;
+  max-width: 585px;
   margin-top: 116px;
   margin-bottom: 95px;
 }
@@ -86,36 +97,35 @@ header .login {
 
 .signup-btn,
 .order-btn {
-  color: #1e1e1e;
-  background-color: #f9c06a;
-  border-radius: 24px;
-  padding: 14px 27px 15px;
+  color: var(--btn-color);
+  background-color: var(--btn-background);
+  border-radius: var(--btn-radius);
+  display: inline-block;
+  padding: var(--btn-paddings);
   transition: 0.3s;
 }
 
-.signup-btn:hover,
-.order-btn:hover {
+.btn-hover:hover {
   box-shadow: 0 0 10px 2px #666;
 }
 
 .order-btn {
   font-weight: bold;
-  display: inline-block;
   margin-top: 20px;
 }
 
 .hero .label,
 .hero .description {
-  color: white;
+  color: var(--color-light);
   font-size: 22px;
 }
 
 .hero .title {
-  color: white;
+  color: var(--color-light);
   font-family: "Clicker Script", cursive;
   font-size: 220px;
 }
 
 .hero .description {
-  line-height: 34px;
+  line-height: var(--line-height-34);
 }
