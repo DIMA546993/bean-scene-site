@@ -7,6 +7,10 @@
   --line-height-34: 34px;
   --color-light: white;
   --color-dark: #707070;
+  --color-cofee: #603809;
+
+  --font-family-logo: "Clicker Script", cursive;
+  --font-text-20: 20px;
 }
 
 body {
@@ -27,6 +31,25 @@ body,
   margin: 0 auto;
 }
 
+.dark-heading {
+  font-size: 54px;
+  color: var(--color-cofee);
+}
+
+.btn {
+  color: var(--btn-color);
+  background-color: var(--btn-background);
+  border-radius: var(--btn-radius);
+  display: inline-block;
+  padding: var(--btn-paddings);
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn-hover:hover {
+  box-shadow: 0 0 10px 2px #666;
+}
+
 header {
   background-image: url(img/coffee_image.png);
   color: var(--color-light);
@@ -35,7 +58,7 @@ header {
 }
 
 header .logo {
-  font-family: "Clicker Script", cursive;
+  font-family: var(--font-family-logo);
   font-weight: 400;
   font-style: normal;
   border: 1px solid red;
@@ -90,42 +113,51 @@ header .login {
   margin-bottom: 95px;
 }
 
+.order-btn {
+  margin-top: 20px;
+}
+
 .signin-btn {
   margin-right: 35px;
   text-decoration: underline;
 }
 
-.signup-btn,
-.order-btn {
-  color: var(--btn-color);
-  background-color: var(--btn-background);
-  border-radius: var(--btn-radius);
-  display: inline-block;
-  padding: var(--btn-paddings);
-  transition: 0.3s;
-}
-
-.btn-hover:hover {
-  box-shadow: 0 0 10px 2px #666;
-}
-
-.order-btn {
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.hero .label,
-.hero .description {
+.hero .label {
   color: var(--color-light);
   font-size: 22px;
 }
 
+.hero .description {
+  color: var(--color-light);
+  font-size: var(--font-text-20);
+}
+
 .hero .title {
   color: var(--color-light);
-  font-family: "Clicker Script", cursive;
+  font-family: var(--font-family-logo);
   font-size: 220px;
+  font-weight: normal;
 }
 
 .hero .description {
   line-height: var(--line-height-34);
+}
+
+.advantages {
+  border: 2px solid green;
+  padding: 80px 0 130px;
+}
+
+.advantages p {
+  font-size: var(--font-text-20);
+  color: var(--color-dark);
+  margin: 29px 0;
+  line-height: var(--line-height-34);
+}
+
+.advantages .description {
+  max-width: 585px;
+  display: inline-block;
+  margin-right: 80px;
+  vertical-align: 60px;
 }
