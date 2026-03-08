@@ -11,6 +11,7 @@
 
   --font-family-logo: "Clicker Script", cursive;
   --font-text-20: 20px;
+  --font-text-54: 54px;
 }
 
 body {
@@ -32,7 +33,7 @@ body,
 }
 
 .dark-heading {
-  font-size: 54px;
+  font-size: var(--font-text-54);
   color: var(--color-cofee);
 }
 
@@ -225,7 +226,6 @@ header .login {
 .features {
   border: 1px solid red;
   text-align: center;
-  margin-bottom: 82px;
 }
 
 .features .description {
@@ -286,4 +286,98 @@ header .login {
 .features .btn {
   margin-top: 24px;
   padding: 13px 41px;
+}
+
+.offer {
+  background-image: url(img/cup.png), url(img/coffee_bean.png), url(img/Group\ 36.png);
+
+  background-repeat: no-repeat;
+  background-size: 300px 467px, contain, cover;
+  background-position: 86%, right, 0;
+  margin-block: 82px;
+}
+
+.offer .text {
+  border: 1px solid red;
+  max-width: 575px;
+  margin-block: 135px;
+}
+
+.offer .text h2 {
+  color: var(--color-light);
+  font-size: var(--font-text-54);
+}
+
+.offer .text p {
+  color: var(--color-light);
+  font-size: var(--font-text-20);
+  line-height: var(--line-height-34);
+  margin-block: 22px;
+}
+
+.feedback {
+  border: 1px solid blue;
+  margin-bottom: 82px;
+  text-align: center;
+}
+
+.feedback .description {
+  color: var(--color-dark);
+  font-size: var(--font-text-20);
+  margin-top: 16px;
+}
+
+.feedback .slider-wrapper {
+  border: 2px solid red;
+  padding-inline: 41px;
+  padding-block: 57px;
+}
+
+.slider {
+  border: 2px solid green;
+}
+
+.slide {
+  background-color: #FFF9F1;
+  border: 1px solid #fac16b6b;
+  padding: 140px 100px 17.5px;
+  position: relative;
+}
+
+.quote {
+  position: absolute;
+  top: 60px;
+  left: 29px;
+}
+
+.slide p {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 17px;
+}
+
+.slide h3 {
+  font-size: 32px;
+  color: var(--color-cofee);
+  margin-bottom: 4px;
+}
+
+.slide .status {
+  display: block;
+  font-size: var(--font-text-20);
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.slide .avatar {
+  border-radius: 16px;
+  width: 83px;
+  height: 83px;
+  background-image: url(img/man.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
 }
