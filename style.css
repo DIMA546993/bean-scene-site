@@ -15,11 +15,12 @@
 }
 
 body {
-  font-family: "Playfair Display", serif;
+  overflow-x: hidden;
 }
 
 body,
 * {
+  font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,7 +28,6 @@ body,
 }
 
 .container {
-  border: 1px solid yellow;
   max-width: 1180px;
   margin: 0 auto;
 }
@@ -61,6 +61,8 @@ header {
   color: var(--color-light);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 95px;
 }
 
 header .logo {
@@ -111,7 +113,6 @@ header .login {
 .hero {
   max-width: 585px;
   margin-top: 116px;
-  margin-bottom: 95px;
 }
 
 .order-btn {
@@ -145,7 +146,6 @@ header .login {
 }
 
 .advantages {
-  border: 2px solid green;
   padding: 80px 0 130px;
 }
 
@@ -164,7 +164,6 @@ header .login {
 }
 
 .products {
-  border: 1px solid red;
   margin-bottom: 130px;
 }
 
@@ -224,7 +223,6 @@ header .login {
 
 
 .features {
-  border: 1px solid red;
   text-align: center;
 }
 
@@ -295,12 +293,11 @@ header .login {
   background-size: 300px 467px, contain, cover;
   background-position: 86%, right, 0;
   margin-block: 82px;
+  padding-block: 135px;
 }
 
 .offer .text {
-  border: 1px solid red;
   max-width: 575px;
-  margin-block: 135px;
 }
 
 .offer .text h2 {
@@ -316,7 +313,6 @@ header .login {
 }
 
 .feedback {
-  border: 1px solid blue;
   margin-bottom: 82px;
   text-align: center;
 }
@@ -328,14 +324,12 @@ header .login {
 }
 
 .feedback .slider-wrapper {
-  border: 2px solid red;
   padding-inline: 41px;
   padding-block: 57px;
   position: relative;
 }
 
 .slider {
-  border: 2px solid green;
   overflow: hidden;
   width: 980px;
   margin: 0 auto;
@@ -485,4 +479,167 @@ header .login {
 
 .arrows-box label:last-child {
   right: 60px;
+}
+
+.subscribe {
+  background-image: linear-gradient(hwb(32 4% 62% / 0.8)), url(img/Rectangle\ 14.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.subscribe h2 {
+  font-size: var(--font-text-54);
+  color: var(--color-light);
+}
+
+.subscribe p {
+  font-size: var(--font-text-20);
+  color: var(--color-light);
+  margin: 16px 0 26px;
+}
+
+.subscribe form {
+  border: 1px solid #F9C06A6B;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.subscribe input[type="email"] {
+  padding: 20px 20px 20px 26px;
+  font-size: var(--font-text-20);
+  border-radius: 4px;
+  border: none;
+  width: 505px;
+}
+
+.subscribe input[type="email"]:focus {
+  outline: none;
+}
+
+.subscribe input[type="email"]::placeholder {
+  color: rgba(0, 0, 0, 0.34);
+}
+
+.subscribe input[type="submit"] {
+  color: var(--color-cofee);
+  background-color: var(--btn-background);
+  font-weight: bold;
+  font-size: 22px;
+  padding: 19px 24px 18px 24px;
+  border-radius: 4px;
+  border: none;
+  vertical-align: bottom;
+  margin-left: -8px;
+  cursor: pointer;
+}
+
+.subscribe input[type="submit"]:hover {
+  box-shadow: 0 0 10px 2px #666;
+  transition: 0.5s;
+}
+
+.subscribe img {
+  position: absolute;
+  top: 138px;
+  z-index: 2;
+}
+
+.subscribe .img-left {
+  left: -250px;
+}
+
+.subscribe .img-right {
+  transform: scaleX(-1);
+  right: -250px;
+}
+
+footer {
+  background: linear-gradient(to bottom, #442808, #895110);
+  position: relative;
+  padding-top: 320px;
+  padding-bottom: 80px;
+  color: var(--color-light);
+  z-index: 1;
+}
+
+footer a {
+  color: var(--color-light);
+}
+
+footer .background-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+footer .contacts,
+footer nav,
+footer nav ul {
+  display: inline-block;
+  position: relative;
+}
+
+footer .contacts {
+  width: 380px;
+}
+
+footer .logo {
+  font-family: var(--font-family-logo);
+  font-size: var(--font-text-54);
+}
+
+footer .contacts p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-block: 20px;
+}
+
+footer .socials a {
+  margin-right: 20px;
+  vertical-align: bottom;
+}
+
+footer .socials a:last-child {
+  margin-right: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-right: 66px;
+}
+
+footer ul li:first-child {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 55px;
+  line-height: 0;
+}
+
+footer ul li {
+  font-size: 18px;
+  line-height: 42px;
+}
+
+footer ul:last-child {
+  width: 332px;
+  margin-right: 0;
+  vertical-align: top;
+}
+
+footer ul:last-child li:first-child {
+  margin-bottom: 49px;
+}
+
+footer ul:last-child li:nth-child(2) {
+  line-height: normal;
+}
+
+footer nav {
+  margin-left: 45px;
 }
